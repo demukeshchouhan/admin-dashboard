@@ -1,2 +1,2 @@
 ### Admin Dashboard
-Dashboard build with SASS, Gulp, Bootstrap, Jade
+Dashboard built with SASS, Gulp, Bootstrap, Jade

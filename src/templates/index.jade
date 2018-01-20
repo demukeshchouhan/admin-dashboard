@@ -10,8 +10,9 @@ html(lang="en")
 		meta(name="keywords", content="keywords,here")
 		link(rel="shortcut icon", href="favicon.ico", type="image/vnd.microsoft.icon")
 		//- link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
 		link(rel="stylesheet", href="css/style.css")
-		link(href="//fonts.googleapis.com/css?family=Lato", rel="stylesheet")
+		link(href="//fonts.googleapis.com/css?family=PT+Sans", rel="stylesheet")
 	body
 
 		//- main wrapper
@@ -19,12 +20,81 @@ html(lang="en")
 
 			//- sidebar panel
 			.sidebar
-				button.btn.btn-primary Click
+				.sidebar_wrapper
+					.logo
+						a(href="#0") Admin-Dashboard
+					ul.nav
+						li: a(href="#0", class="active") 
+							i.fa.fa-tachometer
+							p Dashboard
+						li: a(href="#0") 
+							i.fa.fa-user
+							p Profile
+						li: a(href="#0") 
+							i.fa.fa-database
+							p Data
+						li: a(href="#0") 
+							i.fa.fa-archive
+							p Store
+						li: a(href="#0") 
+							i.fa.fa-folder
+							p Project
+						li: a(href="#0") 
+							i.fa.fa-map
+							p Maps
 
 			//- main panel
 			.main_panel
+				nav.navbar.navbar-default
+					.container-fluid
+						.navbar-header
+							button.navbar-toggle
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+							a(href="#", class="navbar-brand") DashBoard
+
+						.collapse.navbar-collapse
+							ul.nav.navbar-nav
+								li: input(type="text", class="search_bar", placeholder="Enter your text to search")
+							ul.nav.navbar-nav.navbar-right
+								li: a(href="#0") 
+									i.fa.fa-bullhorn
+									p Call to Action
+								li.dropdown
+									a(href="#0", class="dropdown-toggle", data-toggle="dropdown") 
+										span(class="notification"): i.fa.fa-bell
+										span(class="notification_count") 5
+									ul.dropdown-menu
+										li: a(href="#0") 
+											i.fa.fa-user 
+											p Notification 1
+										li: a(href="#0") 
+											i.fa.fa-user 
+											p Notification 2
+										li: a(href="#0") 
+											i.fa.fa-user 
+											p Notification 3
+								li.dropdown
+									a(href="#0", class="dropdown-toggle", data-toggle="dropdown") 
+										i.fa.fa-user
+										p Profile
+											i.fa.fa-caret-down
+									ul.dropdown-menu
+										li: a(href="#0") 
+											i.fa.fa-user
+											p Account
+										li: a(href="#0") 
+											i.fa.fa-user
+											p Settings
+										li: a(href="#0") 
+											i.fa.fa-user
+											p Messages
+
+				.main_panel_content
+				footer.footer
 
 		script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js")
-		//- script(src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+		script(src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
 		//- script(src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js")
 		script(src="js/app.js")

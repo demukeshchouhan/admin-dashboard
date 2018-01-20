@@ -1,4 +1,15 @@
+$base_color : #f4f4f8;
+$sidebar_color : #fff;
+$logo_color : #E74E8F;
 
+$primary_color : #4983E5;
+$secondary_color : #f92;
+$btn-border-radius-base:         0px !default;
+$btn-border-radius-large:        0px !default;
+$btn-border-radius-small:        0px !default;
+
+$default_text_color : #5D5858;
+$headings-color:          $default_text_color !default;
 
 
 $bootstrap-sass-asset-helper: false !default;
@@ -18,7 +29,7 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         #4983E5 !default; // #337ab7
+$brand-primary:         $primary_color !default; // #337ab7
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
@@ -30,7 +41,7 @@ $brand-danger:          #d9534f !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #f4f4f8 !default;
+$body-bg:               #fff !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
 
@@ -875,16 +886,3 @@ $dl-horizontal-offset:        $component-offset-horizontal !default;
 $dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
-
-
-// 
-
-
-$base_color : #f4f4f8;
-$sidebar_color : #fff;
-
-$primary_color : #4983E5;
-$secondary_color : #f92;
-
-$default_text_color : #5D5858;
-$border-radius-base:  0px !default;

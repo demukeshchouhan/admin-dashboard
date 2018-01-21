@@ -1,0 +1,14 @@
+.main_chart_section2{
+	margin-top: 35px;
+	.visitor_report,
+	.recent_order{
+		background: $sidebar_color;
+		padding: 15px;
+	}
+	.vistor_report_wrapper,
+	.recent_order_wrapper{
+		min-height: 100%;
+		height: 300px;
+		overflow-y: auto;
+	}
+}

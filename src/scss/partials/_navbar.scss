@@ -12,6 +12,10 @@
 		margin-left: 5px !important;
 	}
 
+	.search_bar_wrapper{
+		position: relative;
+		min-width: 700px;
+	}
 	.search_bar{
 		width:100%;
 		padding:15px;
@@ -21,6 +25,31 @@
 		font-size: 2rem;
 		color: darken($base_color, 25%);
 		border-left: 1px solid $base_color;
+	}
+	.search_bar_manu{
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		padding: 15px;
+		z-index: 999;
+		background: $base_color;
+		list-style: none;
+		box-shadow: 0px 8px 50px darken($base_color, 25%) ;
+		li{
+			padding: 5px 0;
+			margin: 0;
+			a{
+				text-decoration: none;
+				color: darken($base_color, 40%);
+				display: block;
+				padding: 0;
+				margin: 0 !important;
+				border-bottom: 1px solid darken($base_color, 10%);
+			}
+		}
+		 
 	}
 
 	.navbar-nav{

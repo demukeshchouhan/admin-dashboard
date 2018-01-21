@@ -56,7 +56,13 @@ html(lang="en")
 
 						.collapse.navbar-collapse
 							ul.nav.navbar-nav
-								li: input(type="text", class="search_bar", placeholder="Enter your text to search")
+								li
+									.search_bar_wrapper
+										input(type="text", class="search_bar", placeholder="Enter your text to search")
+										ul.search_bar_manu
+											li: a(href="#") Suggestion 1
+											li: a(href="#") Suggestion 2
+											li: a(href="#") Suggestion 3
 							ul.nav.navbar-nav.navbar-right
 								li: a(href="#0") 
 									i.fa.fa-bullhorn
@@ -96,6 +102,7 @@ html(lang="en")
 					.container-fluid 
 						include ./partials/card.jade
 						include ./partials/monthly_report.jade					
+						include ./partials/visitor_report.jade					
 					
 
 					

@@ -16,7 +16,7 @@ const inject = require("gulp-inject");
 gulp.task("html", function(){
 	return gulp.src("./src/templates/**/*.jade")
 			.pipe(jade())
-			.pipe(concat("index.html"))
+			// .pipe(concat("index.html"))
 			.pipe(gulp.dest("public/"))
 			.pipe(connect.reload());
 });
@@ -34,7 +34,7 @@ gulp.task("js", function(){
 	return gulp.src("./src/js/*.js")
 			.pipe(sourcemaps.init())
 			.pipe(babel())
-			.pipe(concat("app.js"))
+			.pipe(concat("app.js"))	
 			.pipe(uglify())
 			.pipe(sourcemaps.write('.'))
 			.pipe(gulp.dest("public/js/"))

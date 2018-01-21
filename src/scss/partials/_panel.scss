@@ -1,0 +1,86 @@
+.panel_wrapper{
+	background-color: $sidebar_color;
+	padding: 0 15px 15px;
+	box-shadow: 1px 2px 30px darken($base_color, 15%) ;
+
+	
+
+	.big_icon{
+		i{
+			font-size: 5rem;
+			color: $base_color;
+		}
+	}
+	.card_numbers{
+		
+		p{
+			font-size: 2.2rem;
+			text-align: right;
+			border-bottom: 1px solid darken($base_color, 8%);
+			margin-bottom:2px;
+			padding: 2px 0;
+			color: $base_color;
+		}
+		span{
+			font-size: 1.5rem;
+			text-align: right;
+			font-weight: 600;
+			display: block;
+			color: $base_color;
+		}
+
+	}
+	.footer{
+		
+		i, p, span{
+			display: inline-block;
+			padding: 0 2px;
+
+		}
+
+		.panel_footer_num{
+			color: $primary_color;
+		}
+	}
+}
+
+.stats_header_back{
+	display: inline-block;
+	width: 100%;
+	padding: 15px 5px;
+	
+}
+.stats_header_back.error_card{
+	background-color: lighten(#ff4136, 13%);
+	hr{
+		background: lighten(#ff4136, 20%);
+	}
+}
+.stats_header_back.blue_card{
+	background : lighten(#0074d9, 13%);
+}
+
+.stats_header_back.issue_card{
+	background : lighten(#ff851b, 13%);
+}
+
+.stats_header_back.revenue_card{
+	background : lighten(#12c261, 3%);
+}
+
+
+// @for $i from 1 through length($colors_for_card_icon){
+// 	// .col-lg-3:nth-child(#{$i}) .panel_wrapper .col-xs-5 .big_icon i{
+// 	// }	
+// 	.col-lg-3:nth-child(#{$i}) .panel_wrapper .stats_header_back{
+// 		background: nth($colors_for_card_icon, $i);
+// 		display: inline-block;
+// 		width: 100%;
+// 		padding-top: 15px;
+// 	}
+// }
+
+
+
+
+    

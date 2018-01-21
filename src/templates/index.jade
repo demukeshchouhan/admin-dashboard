@@ -90,11 +90,19 @@ html(lang="en")
 										li: a(href="#0") 
 											i.fa.fa-user
 											p Messages
-
+				
+				//- main panel
 				.main_panel_content
+					.container-fluid 
+						include ./partials/card.jade
+						include ./partials/monthly_report.jade					
+					
+
+					
+
+
+						
+
 				footer.footer
 
-		script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js")
-		script(src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
-		//- script(src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js")
-		script(src="js/app.js")
+		include ./partials/scripts.jade
